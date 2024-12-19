@@ -1,17 +1,7 @@
-let overral = 'x ';
-for (let i = 0; i < 9; i++) {
-    for (let k = 0; k < 9; k++) {
-        if(i == 0 && k > 0){
-          overral += '{' + k + '}';
-        }
-        else if (k == 0 && i > 0){
-          overral += '{' + i + '}';
-        }
-        else if(i > 0 && k > 0){
-        overral += (i * k) + ' ';
-        }
-    }
-    overral += '\n'
-}
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-console.log(overral);
+arr.forEach((i) => {
+    arr.forEach((j) => {
+        console.log(`${i} * ${j} = ${i * j}`);
+    });
+});
